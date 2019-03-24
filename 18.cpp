@@ -19,7 +19,11 @@ int main(void){
     }
     for(int i1=0; i1<max_count1; i1++){
         for(int j1=0; j1<max_count1; j1++){
-            cout<<1<<" ";
+            cout<<1;
+            if(i1!=(max_count1-1))
+            {
+                cout<<" ";
+            }
         }
         cout<<"\n";
     }
