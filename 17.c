@@ -5,7 +5,7 @@ int main()
     scanf("%d%d",&n1,&k1);
     for(i1=0;i1<n1;i1++)
     {
-    	scanf("%d",&ak1[i]);
+    	scanf("%d",&ak1[i1]);
     }
     for(i1=0;i1<n1;i1++)
     {  
