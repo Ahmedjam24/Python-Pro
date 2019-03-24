@@ -1,14 +1,14 @@
 
 n1 = int(input())
-in_num = list(map(int, input().split()))
+in1_num = list(map(int, input().split()))
  
-no_of_one = []
-for i in in_num:
+no1_of_one = []
+for i in in1_num:
     count = 0
     while i:
         i &= (i-1)
         count += 1
-    no_of_one.append(count)
+    no1_of_one.append(count)
  
-result = sorted(zip(no_of_one, in_num), reverse=True)
+result = sorted(zip(no1_of_one, in1_num), reverse=True)
 print(*[num for _, num in result], sep='\n')
