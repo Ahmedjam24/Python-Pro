@@ -21,7 +21,7 @@ int main(void){
         for(int j1=0; j1<max_count1; j1++){
             cout<<1<<" ";
         }
-        cout<<endl;
+        cout<<"\n";
     }
     return 0;
 }
