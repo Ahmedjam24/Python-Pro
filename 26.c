@@ -4,41 +4,41 @@
 #include <stdlib.h>
 int main() 
 {
-  int a1,*b;
-  scanf("%d",&a1);
-  b=malloc(a1*sizeof(int));
-  for(int i=0;i<a1;i++)
+  int a2,*b2;
+  scanf("%d",&a2);
+  b2=malloc(a2*sizeof(int));
+  for(int i=0;i<a2;i++)
   {
-    scanf("%d",&b[i]);
+    scanf("%d",&b2[i]);
   }
-  int c[a1];
-  for(int i=0;i<a1;i++)
+  int c2[a2];
+  for(int i=0;i<a2;i++)
   {
-    int d=0,flag=0;
-    for(int j=0;j<a1;j++)
+    int d2=0,flag2=0;
+    for(int j=0;j<a2;j++)
     {
-      if(j>i && flag==0)
+      if(j>i && flag2==0)
       {
-        if(b[j]>b[i])
+        if(b2[j]>b2[i])
         {
-        d++;
+        d2++;
         }
         else
         {
-         flag=1; 
+         flag2=1; 
         }
       }      
     }
-    c[i]=d+1;
+    c2[i]=d2+1;
   }
-  int f=c[0];
-  for(int i=0;i<a1;i++)
+  int f2=c2[0];
+  for(int i=0;i<a2;i++)
   {
-    if(f<c[i])
+    if(f2<c2[i])
     {
-      f=c[i];
+      f2=c2[i];
     }
   }
-  printf("%d",f);
+  printf("%d",f2);
   return 0;
 }
